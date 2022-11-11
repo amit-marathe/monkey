@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    font-family: "Gilroy";
+}
+
+.navbar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.nleft{
+    display: flex;
+    gap: 5px;
+}
+.nleft h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.lc{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.lc h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: none;
+}
+
+.ncenter{
+    display: flex;
+    gap: 80px;
+}
+
+.ncenter a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    opacity: 0.5;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    padding: 2px 0;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+}
+
+.ncenter a:hover{
+    opacity: 1;
+    border-color: black;
+}
+
+.rc{
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.421);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc i{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.center{
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+.cleft{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.cleft h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    line-height: 1;
+}
+
+.cleft p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: .5;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    line-height: 1.5;
+}
+
+.cleft .bar{
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    width: 65%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: #f3f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cleft .bar i{
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: #b4b5bb;
+}
+
+.cleft .bar .form{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cleft .bar input{
+    height: 30px;
+    border: 2px solid rgba(225,255,255,0);
+    background-color: #f3f5f7;
+    opacity: 0.7;
+}
+
+.cleft .bar button{
+    width: 20%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.cright{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cright .card{
+    height: 70%;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.card .top img{
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.card .name{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.card .name .text h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card .name .text p{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.card .name .img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-image: url(./Assets/images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cright .card .bottom {
+    width: 100%;
+    height: 15%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    padding: 0 10px;
+}
+
+.card .bottom h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cright #card1{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: rotate(-20deg);
+}
+
+.main #text{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+#text h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#text h2{
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.images{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images .box{
+    height: 80%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.images #one{
+    background-image: url(./Assets/images/img2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.images #two{
+    background-image: url(./Assets/images/img4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.images #three{
+    background-image: url(./Assets/images/img3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.images #four{
+    background-image: url(./Assets/images/img5.jpeg);
+    background-position: center;
+    background-size: cover;
+}
